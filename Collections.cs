@@ -171,6 +171,21 @@ namespace Programming
                 Console.WriteLine(s.ToString());
             }
         }
+        // hash table 
+        public static void addHashTable()
+        {
+            Hashtable ht = new Hashtable();
+            ht.Add("ename", "harsh");
+            ht.Add("eid", 456);
+            ht.Add("ecity", "chainnai");
+            ht.Add("esal", 85412);
+            Console.WriteLine();
+            foreach (Object key in ht.Keys)
+            {
+                Console.WriteLine(ht[key]);
+            }
+        }
+
 
         static void Main(string[] args)
         {
@@ -185,6 +200,9 @@ namespace Programming
             addIteminQueue();
             /* STACK */
             AddItemInStack();
+            /* hash-table */
+
+            addHashTable();
             Console.ReadKey();
         }
     }
