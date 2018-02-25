@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections;
+using System.Threading;
 using System.Collections.Generic;
 
 namespace Programming
@@ -421,6 +423,22 @@ namespace Programming
             itemsCount = hashList.Count;
             Console.WriteLine(" Count after Delete:->" + itemsCount);
         }
+        /* system.collections.concurrent */
+        static ConcurrentDictionary<int, string> cd = new ConcurrentDictionary<int, string>();
+        static void test1()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                cd.TryAdd(i, "test1 is added " + i);
+            }
+        }
+        static void test2()
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                cd.TryAdd(i, "test2 is added " + i);
+            }
+        }
 
         static void Main(string[] args)
         {
@@ -471,6 +489,12 @@ namespace Programming
             /*ICollection & IList Interfaces*/
 
             addItemInIList();
+            /* system.collections.concurrent */
+
+            Thread t1 = new Thread(test1);
+            Thread t2 = new Thread(test2);
+            t1.Start();
+            t2.Start();
 
             Console.ReadKey();
         }
