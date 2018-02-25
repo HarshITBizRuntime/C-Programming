@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Programming
 {
     class loops
     {
-        // IF-Else Blocks 
+        /* IF-Else Blocks */
+
         static void IfDemo1()
         {
             if (true) // boolean Condition only two value true & false
@@ -25,6 +22,7 @@ namespace Programming
 
             Boolean b1 =true; // 
             Boolean b2 = false;
+
             if (b1 || b2) // here OR operator check only first any condition it is true then all the Condition true 
                 Console.WriteLine("if ");
             else
@@ -32,6 +30,7 @@ namespace Programming
 
            Boolean b3 = true;
            Boolean b4 = false;
+
             if (b3 && b4)   // here and operator check only all the condition first is false then check for second condition
                 Console.WriteLine("from if ");
             else
@@ -72,9 +71,10 @@ namespace Programming
             {
                 Console.WriteLine("we can not write single else block");
             }*/
-
         }
-        // Switch-Case Blocks 
+
+        /* Switch-Case Blocks */
+
         static void SwitchCaseDemo1()
         {
             int i = 10;
@@ -122,28 +122,35 @@ namespace Programming
         static void ForDemo1()
         {
             for (int a = 1; a <= 5; a++)
+			{
                 Console.Write("ForDemo1()" + a + " ,");
-
+			}
             int i;
             int j = 10;
-            for (i = 0, Console.WriteLine("Start: {0}", i); i < j; i++, j--, Console.WriteLine("i={0}, j={1}", i, j))
+ 
+			for (i = 0, Console.WriteLine("Start: {0}", i); i < j; i++, j--, Console.WriteLine("i={0}, j={1}", i, j))
             {
                 // Body of the loop.
             }
         }
+		/* Do-while */
+
         static void DoDemo1()
         {
             int x = 0;
             do
             {
-                Console.WriteLine(x);
+                Console.WriteLine(x); // first execute and then check condition
                 x++;
             } while (x < 5);
         }
+
+		/* While */
+
         static void DoWhileDemo1()
         {
             int x = 0;
-            while (x < 5)
+            while (x < 5) // first condition check and then execete
             {
                 x++;
                 Console.WriteLine(x);
@@ -158,7 +165,7 @@ namespace Programming
             Console.WriteLine("");
             SwitchCaseDemo1();
             Console.WriteLine("");
-            //  ErrorSwitchCaseDemo2();
+          //ErrorSwitchCaseDemo2();
             ForDemo1();
             Console.WriteLine("");
             DoDemo1();

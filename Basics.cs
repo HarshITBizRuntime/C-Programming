@@ -66,7 +66,7 @@ namespace Programming
             Console.WriteLine("");
             ReIntilizePrintVriableDemo();
             Console.WriteLine("");
-            //ErrorVriableDemo();
+          //ErrorVriableDemo();
             Console.Read();
         }
     }
