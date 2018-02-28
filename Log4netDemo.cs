@@ -4,7 +4,7 @@ using System.Threading;
 namespace log4jnetDemostration
 {
     ///<summary>
-	///    this is demo of Log4net and  XML Documentation Comments in C# 
+	///    this is demo of Log4net and  XML Documentation Comments in C#-Programming
     /// </summary>   
     class Log4netDemo
     {
