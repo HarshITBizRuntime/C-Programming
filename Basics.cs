@@ -14,7 +14,7 @@ namespace Programming
             int a = 10;
             int b = 20;
             Console.WriteLine(" Value of a is " + a);
-            Console.WriteLine("WriteLine()"); //Write() and WriteLine() both method put it as Blank 
+            Console.WriteLine("WriteLine()"); //Write() and WriteLine() both function put it as Blank 
             Console.WriteLine(" Value of a is " + b);
         }
         static void ReadLineDemo()
