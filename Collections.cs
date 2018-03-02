@@ -8,7 +8,7 @@ namespace Programming
 {
     class Collections
     {
-        /* List */
+		/* List */
 
         List<String> list = new List<String>();
         public  void AddItemInList()
@@ -18,6 +18,7 @@ namespace Programming
             list.Add("Hello");
             list.Add("Hie");
             list.Add("How are you");
+
             int i = list.Count;
             this.PrintItemInList();
             Console.WriteLine("list count is " + i);
@@ -143,7 +144,7 @@ namespace Programming
         }
         static void copyarrayintoQueue()
         {
-            string[] company = { "wipro", "TCS", "Acenture", "Reliance" }; // Copy array in to Queue
+            string[] company = { "wipro", "TCS", "Acenture", "Reliance" }; // Copy array [] in to Queue
             Queue<string> compny = new Queue<string>(company);
             Console.WriteLine("all employee Company name:-> ");
             print(compny);
@@ -442,26 +443,38 @@ namespace Programming
 
         static void Main(string[] args)
         {
-           // /* LIST */
-            Collections c = new Collections();
-           // c.AddItemInList();
-            /* DICTONARY */
-           // addItemInDictionary();
-            /* SORTED LIST */
-           // addIteminSortedList();
-            /* QUEUE */
-           // addIteminQueue();
-             /* STACK */
-           //AddItemInStack();
-            /* hash-table */
-           // addHashTable();
-            /* ArrayList*/
-           // AddArrayList(); 
+            /* LIST */
+            
+			Collections c = new Collections();
+            c.AddItemInList();
+            
+			/* DICTONARY */
+        
+		   addItemInDictionary();
+           
+			/* SORTED LIST */
+           addIteminSortedList();
+           
+		   /* QUEUE */
+           
+		   addIteminQueue();
+            
+			 /* STACK */
+           
+		   AddItemInStack();
+            
+			/* hash-table */
+            
+			addHashTable();
+           
+			/* ArrayList*/
+            
+			AddArrayList(); 
             
             /* IEnumerable & IEnumerator Interface*/
             
-            //c.addIEnumerable();
-            //c.addIEnumerator();
+           c.addIEnumerable();
+           c.addIEnumerator();
             
             /*IComparable & IComparer Interfaces*/
 
