@@ -8,7 +8,7 @@ namespace Programming
 
         static void IfDemo1()
         {
-            if (true) // boolean Condition only two value true & false
+            if (true)	// boolean Condition only two value true & false
                 Console.WriteLine(" if condition is true");
             else
                 Console.WriteLine(" if condition is false");
