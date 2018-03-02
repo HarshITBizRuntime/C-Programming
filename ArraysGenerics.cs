@@ -6,7 +6,7 @@ namespace Programming
     {
         static void CreateOneDimArray()
         {
-            int[] A = new int[5];  //Declare single dimensional array and accept 5 integer values from the user. 
+            int[] A = new int[5];  //Declare single dimensional array and accept 5 integer values from the user
            
 			for (int i = 0; i < 5; i++)
             {
