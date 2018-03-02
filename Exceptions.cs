@@ -21,7 +21,7 @@ namespace Programming
             {
                 // for displying better user msg we as using ApplicationException // that are not Handel by CLR // only on user will create instance 
 
-                // throw new ApplicationException("divisor must be divided by even number"); // this is way define your own exception 
+                // throw new ApplicationException("divisor must be divided by even number");	// this is way define your own exception 
 
                 throw new DivideByZero(); // this is the way to call own user applicationException Class
             }
@@ -79,10 +79,12 @@ namespace Programming
         {
             ExceptionData1();           
             ExceptionData2();           
-            Console.ReadKey();
+    
+			Console.ReadKey();
         }
     }
-    /* This is the way to create own user applicationException Class*/
+    
+	/* This is the way to create own user applicationException Class*/
 
     class DivideByZero : ApplicationException  
     {
